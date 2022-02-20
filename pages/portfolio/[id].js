@@ -1,10 +1,7 @@
-import { useRouter, withRouter } from 'next/router'
+import { useRouter, withRouter } from "next/router";
 
 export default function Project() {
+  const { query } = useRouter();
 
-  const router = useRouter();
-
-  return <h1>
-    Project A
-  </h1>
+  return <h1>Project A = {query.id}</h1>;
 }
